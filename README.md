@@ -4,15 +4,22 @@
 
 #### Build Setup
 
+
 ``` bash
-# install dependencies
-npm install
+# 前提
+npm install --global --production windows-build-tools
+使用 windows-build-tools 来为我们完成大部分烦人的工作。全局安装此工具将依次设置 Visual C++ 软件包、Python 等等。（安装时间可能会很久）
+到现在为止，所有工具都应该成功安装了，如果没有，那么你就会需要安装一个干净的 Visual Studio。请注意，这些并不是 electron-vue 自身的问题 (Windows 有时候可能会很难用)。
 
-# serve with hot reload at localhost:9080
-npm run dev
+# 初始化electron-vue项目
+vue init simulatedgreg/electron-vue electron-vue-template
 
-# build electron application for production
-npm run build
+# 进入项目并初始化
+  $ cd electron-vue-template
+  $ npm install
+
+# 下载缺失的包并放到对应的位置
+
 
 
 ```
